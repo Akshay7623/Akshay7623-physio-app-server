@@ -10,7 +10,7 @@ router.post('/', async function (req, res, next) {
     res.header("Access-Control-Allow-Credentials", 'true');
     res.header("Referrer-Policy", "no-referrer-when-downgrade");
 
-    const redirectURL = 'http://localhost:3000/oauth';
+    const redirectURL = 'https://akshay.up.railway.app/oauth';
 
     const oAuth2Client = new OAuth2Client(
         process.env.CLIENT_ID,

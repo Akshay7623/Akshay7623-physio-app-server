@@ -11,7 +11,7 @@ router.get('/', async function (req, res, next) {
     const code = req.query.code;
 
     try {
-        const redirectURL = "http://localhost:3000/oauth"
+        const redirectURL = "https://akshay.up.railway.app/oauth"
 
         const oAuth2Client = new OAuth2Client(process.env.CLIENT_ID, process.env.CLIENT_SECRET, redirectURL);
         const r = await oAuth2Client.getToken(code);
