@@ -1,5 +1,4 @@
-const dotenv = require('dotenv')
-dotenv.config('./')
+require('dotenv').config();
 require('./dbconfig')
 const express = require('express')
 const cors = require('cors')
@@ -47,7 +46,6 @@ const GetAllPhysioRouter = require('./routes/get_all_physio');
 const DeletePhysioRouter = require('./routes/delete_physio');
 const UpdatePhysioRouter =  require('./routes/update_physio')
 const AssignAppointmentRouter = require('./routes/assign_appointment');
-
 
 app.use(cookieParser());
 app.use(express.json())
